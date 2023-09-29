@@ -81,6 +81,10 @@ function fetch_emails(mailbox) {
         // ...create a row for each
         const newRow = document.createElement('div');
         newRow.className = "row";
+        newRow.style.borderStyle = "solid";
+        newRow.style.cursor = "pointer";
+        newRow.style.padding = "10px";
+        newRow.style.margin = "2px";
         newRow.innerHTML = `
           <div class="col"><b>${email.sender}</b></div>
           <div class="col-6">${email.subject}</div>
